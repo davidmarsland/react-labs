@@ -1,7 +1,11 @@
 
+#react-labs
 ### React Dev Labs
 ### These labs augment the React and Redux course at
 <a target="_git_react" href="https://davidmarsland.github.io/react-spike/">https://davidmarsland.github.io/react-spike/</a>
+
+### Lab solutions are available here:
+<a target="_git_labs" href="https://github.com/davidmarsland/react-labs/">https://github.com/davidmarsland/react-labs/</a>
 
 ---
 ### Lab: Set Up React Dev Env and Create React App helloworld
