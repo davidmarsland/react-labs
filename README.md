@@ -27,6 +27,7 @@ create-react-app simpletable
 ```
 * In src directory, delete App.*
 * Start with this data from Thinking In React and declare PRODUCTS in src/index.js
+
 ```
 const PRODUCTS = [
   {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
@@ -62,6 +63,7 @@ export default SimpleTable;
 ```
 <tr><td>name</td><td>price</td></tr>
 ```
+
 <br>Similar to this:
 
 ```
@@ -94,6 +96,7 @@ class ProductCategoryRow extends React.Component {
 ...
 export default ProductCategoryRow;
 ```
+
 * Import appropriate dependencies for each file like this:
 
 ```
@@ -125,10 +128,12 @@ handleAddToCart(product) {
 ### Redux Todo Example App from Redux Course 
 * <a target="_redux" href="https://github.com/sadams/todo-redux-react-webpack">https://github.com/sadams/todo-redux-react-webpack</a>
 * Clone repo, then:
+
 ```
 npm install
 npm run start
 ```
+
 * Launches on localhost:8080 by default.
 
 ---
