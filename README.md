@@ -21,6 +21,7 @@
 ### Lab: Simple Table in React
 #### Implement a simple table in React
 * Generate project 
+
 ```
 create-react-app simpletable
 ```
@@ -54,13 +55,15 @@ class SimpleTable extends React.Component {
 }
 
 export default SimpleTable;
-
 ```
+
 * Inside the tbody tags use an array and map() this.props.products to populate the name and price for each product
+
 ```
 <tr><td>name</td><td>price</td></tr>
 ```
 <br>Similar to this:
+
 ```
   <ul>
     {this.props.items.map((value, index) => {
@@ -68,8 +71,10 @@ export default SimpleTable;
     })}
   </ul>
 ```
+
 * Modify index.js to render SimpleTable instead of App and pass in products={PRODUCTS} as a prop.
 * Run app in browser
+
 ```
 npm start
 ```
