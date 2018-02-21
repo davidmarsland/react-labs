@@ -85,7 +85,26 @@ npm start
 * Read the <a target="_ref" href="https://reactjs.org/docs/thinking-in-react.html">Thinking in React Tutorial</a> up to Step 2
 * Modularize the code in 
 <a target="_ref" href="https://codepen.io/gaearon/pen/BwWzwm">Step 2: Build A Static Version in React</a>
-* Create jsx files for each class and add import and export like this:
+* Generate project 
+
+```
+create-react-app catalog
+```
+* In src directory, delete App.*
+* Start with this data from Thinking In React and declare PRODUCTS in src/index.js
+
+```
+const PRODUCTS = [
+  {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
+  {category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball'},
+  {category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball'},
+  {category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch'},
+  {category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5'},
+  {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
+];
+```
+
+* In src directory, create jsx files for each class and add import and export like this:
 
 ```
 ProductCategoryRow.jsx
@@ -106,7 +125,19 @@ import ProductRow from './ProductRow';
 
 class ProductTable extends React.Component ...
 ```
+Modify index.js to import FilterableProductTable then call: 
 
+```
+ReactDOM.render(
+  <FilterableProductTable products={PRODUCTS} />,
+  document.getElementById('container')
+);
+```
+* Run app in browser
+
+```
+npm start
+```
 ---
 ### Lab: Add State to Filterable Product Table
 * Read all of Step 3:  Identify The Minimal (but complete) Representation Of UI State
