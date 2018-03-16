@@ -8,6 +8,11 @@
 <a target="_git_labs" href="https://github.com/davidmarsland/react-labs/">https://github.com/davidmarsland/react-labs/</a>
 
 ---
+### Useful Tools 
+
+* Grip server, preview GitHub Markdown files like README.md locally
+* <a target="_ref" href="https://github.com/joeyespo/grip">https://github.com/joeyespo/grip</a>
+---
 ### Lab: Set Up React Dev Env and Create React App helloworld
 * Follow the steps in this tutorial to use Create React App for starter files
 * Then create helloworld app
@@ -81,15 +86,17 @@ export default SimpleTable;
 npm start
 ```
 ---
-### Lab: Thinking In React Filterable Product Table
+### Lab: Thinking In React Filterable Product Table Catalog
 * Read the <a target="_ref" href="https://reactjs.org/docs/thinking-in-react.html">Thinking in React Tutorial</a> up to Step 2
-* Modularize the code in 
-<a target="_ref" href="https://codepen.io/gaearon/pen/BwWzwm">Step 2: Build A Static Version in React</a>
 * Generate project 
 
 ```
 create-react-app catalog
 ```
+
+* Modularize the code in 
+<a target="_ref" href="https://codepen.io/gaearon/pen/BwWzwm">Step 2: Build A Static Version in React</a>
+
 * In src directory, delete App.*
 * Start with this data from Thinking In React and declare PRODUCTS in src/index.js
 
@@ -106,9 +113,9 @@ const PRODUCTS = [
 
 * In src directory, create jsx files for each class and add import and export like this:
 
-```
-ProductCategoryRow.jsx
+`ProductCategoryRow.jsx`
 
+```
 import React from 'react';
 
 class ProductCategoryRow extends React.Component {
@@ -125,12 +132,13 @@ import ProductRow from './ProductRow';
 
 class ProductTable extends React.Component ...
 ```
-Modify index.js to import FilterableProductTable then call: 
+* Modify index.js to import FilterableProductTable then render.  <br>
+Note that id is 'root', not 'container'
 
 ```
 ReactDOM.render(
   <FilterableProductTable products={PRODUCTS} />,
-  document.getElementById('container')
+  document.getElementById('root')
 );
 ```
 * Run app in browser
@@ -140,9 +148,10 @@ npm start
 ```
 ---
 ### Lab: Add State to Filterable Product Table
-* Read all of Step 3:  Identify The Minimal (but complete) Representation Of UI State
-* Read Step 4: Identify Where Your State Should Live and modify the code as described to add state
-* Complete Step 5: Add Inverse Data Flow
+* Read all of <a target="_ref" href="https://reactjs.org/docs/thinking-in-react.html#step-3-identify-the-minimal-but-complete-representation-of-ui-state">Step 3:  Identify The Minimal (but complete) Representation Of UI State</a>
+* Read <a target="_ref" href="https://reactjs.org/docs/thinking-in-react.html#step-4-identify-where-your-state-should-live">Step 4: Identify Where Your State Should Live</a>
+<br>and modify the code as described to add state
+* Complete <a target="_ref" href="https://reactjs.org/docs/thinking-in-react.html#step-5-add-inverse-data-flow">Step 5: Add Inverse Data Flow</a>
 * Optional Challenge: Create a Cart component and add selected products to the cart
 
 ```
