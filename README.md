@@ -7,11 +7,7 @@
 ### Lab solutions are available here:
 <a target="_git_labs" href="https://github.com/davidmarsland/react-labs/">https://github.com/davidmarsland/react-labs/</a>
 
----
-### Useful Tools 
 
-* Grip server, preview GitHub Markdown files like README.md locally
-* <a target="_ref" href="https://github.com/joeyespo/grip">https://github.com/joeyespo/grip</a>
 ---
 ### Lab: Set Up React Dev Env and Create React App helloworld
 * Follow the steps in this tutorial to use Create React App for starter files
@@ -196,3 +192,9 @@ npm run start
 * <a target="_ref" href="http://cabin.getstream.io/">Learn React & Redux With Cabin</a>
 
 * <a target="_ref" href="https://survivejs.com/react/introduction/">Survive JS - Webpack and React Book</a>
+
+---
+### Useful Tools 
+
+* Grip server, preview GitHub Markdown files like README.md locally
+* <a target="_ref" href="https://github.com/joeyespo/grip">https://github.com/joeyespo/grip</a>
