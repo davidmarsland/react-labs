@@ -14,6 +14,8 @@
 * Then create helloworld app
 * <a target="_ref" href="https://www.kirupa.com/react/setting_up_react_environment.htm">https://www.kirupa.com/react/setting_up_react_environment.htm</a>
 
+#### <a target="_ref" href="https://davidmarsland.github.io/react-labs/solutions/startercreatereactapp/build/">Lab Solution Online</a>  
+
 ---
 ### Tutorial Labs: Intro to React
 <a target="_ref" href="https://reactjs.org/tutorial/tutorial.html">Facebook React Tutorial</a>
