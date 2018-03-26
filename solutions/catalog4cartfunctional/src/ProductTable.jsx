@@ -3,104 +3,49 @@ import ProductCategoryRow from './ProductCategoryRow';
 import ProductRow from './ProductRow';
 
 const ProductTable = ({
-    products,
-    filterText,
-    inStockOnly,
-    onAddToCart=f=>f 
-  }) => {
-    const rows = [];
-    let lastCategory = null;
-    
-    products.forEach((product) => {
-      if (product.name.indexOf(filterText) === -1) {
-        return;
-      }
-      if (inStockOnly && !product.stocked) {
-        return;
-      }
-      if (product.category !== lastCategory) {
-        rows.push(
-          <ProductCategoryRow
-            category={product.category}
-            key={product.category} />
-        );
-      }
+  products,
+  filterText,
+  inStockOnly,
+  onAddToCart = f => f
+}) => {
+  const rows = [];
+  let lastCategory = null;
+
+  products.forEach((product) => {
+    if (product.name.indexOf(filterText) === -1) {
+      return;
+    }
+    if (inStockOnly && !product.stocked) {
+      return;
+    }
+    if (product.category !== lastCategory) {
       rows.push(
-        <ProductRow
-          product={product}
-          key={product.name} 
-          onAddToCart={product=>onAddToCart(product)}
-        />
+        <ProductCategoryRow
+          category={product.category}
+          key={product.category} />
       );
-      lastCategory = product.category;
-    });
-
-    return (
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tbody>{rows}</tbody>
-      </table>
+    }
+    rows.push(
+      <ProductRow
+        product={product}
+        key={product.name}
+        onAddToCart={product => onAddToCart(product)}
+      />
     );
-  }
+    lastCategory = product.category;
+  });
 
-
-// class ProductTable extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.handleAddToCart = this.handleAddToCart.bind(this);
-//   }
-
-//   handleAddToCart(item) {
-//     this.props.onAddToCart(item);
-//   }
-
-//   render() {
-//     const filterText = this.props.filterText;
-//     const inStockOnly = this.props.inStockOnly;
-//     const rows = [];
-//     let lastCategory = null;
-    
-//     this.props.products.forEach((product) => {
-//       if (product.name.indexOf(filterText) === -1) {
-//         return;
-//       }
-//       if (inStockOnly && !product.stocked) {
-//         return;
-//       }
-//       if (product.category !== lastCategory) {
-//         rows.push(
-//           <ProductCategoryRow
-//             category={product.category}
-//             key={product.category} />
-//         );
-//       }
-//       rows.push(
-//         <ProductRow
-//           product={product}
-//           key={product.name} 
-//           onAddToCart={this.handleAddToCart}
-//         />
-//       );
-//       lastCategory = product.category;
-//     });
-
-//     return (
-//       <table>
-//         <thead>
-//           <tr>
-//             <th>Name</th>
-//             <th>Price</th>
-//           </tr>
-//         </thead>
-//         <tbody>{rows}</tbody>
-//       </table>
-//     );
-//   }
-// }
+  return (
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>{rows}</tbody>
+    </table>
+  );
+}
 
 export default ProductTable;
