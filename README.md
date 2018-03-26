@@ -13,8 +13,8 @@
 * Follow the steps in this tutorial to use Create React App for starter files
 * Then create helloworld app
 * <a target="_ref" href="https://www.kirupa.com/react/setting_up_react_environment.htm">https://www.kirupa.com/react/setting_up_react_environment.htm</a>
-
-#### <a target="_ref" href="https://davidmarsland.github.io/react-labs/solutions/startercreatereactapp/build/">Lab Solution Online</a>  
+* <a target="_ref" href="https://davidmarsland.github.io/react-labs/solutions/startercreatereactapp/build/">Starter Create React App Online</a>  
+* <a target="_ref" href="https://davidmarsland.github.io/react-labs/solutions/helloworld/build/">Helloworld App Online</a>
 
 ---
 ### Tutorial Labs: Intro to React
@@ -23,6 +23,7 @@
 ---
 ### Lab: Simple Table in React
 #### Implement a simple table in React
+#### Here's the app you're about to create: <a target="_ref" href="https://davidmarsland.github.io/react-labs/solutions/simpletable/build/">Lab Solution Online</a>
 * Generate project 
 
 ```
@@ -85,6 +86,7 @@ npm start
 ```
 ---
 ### Lab: Thinking In React Filterable Product Table Catalog
+#### Here's the app you're about to create: <a target="_ref" href="https://davidmarsland.github.io/react-labs/solutions/catalog1static/build/">Lab Solution Online</a>
 * Read the <a target="_ref" href="https://reactjs.org/docs/thinking-in-react.html">Thinking in React Tutorial</a> up to Step 2
 * Generate project 
 
@@ -146,10 +148,18 @@ npm start
 ```
 ---
 ### Lab: Add State to Filterable Product Table
+#### Here's the app you're about to create: <a target="_ref" href="https://davidmarsland.github.io/react-labs/solutions/catalog2state/build/">Lab Solution Online</a>  
+
 * Read all of <a target="_ref" href="https://reactjs.org/docs/thinking-in-react.html#step-3-identify-the-minimal-but-complete-representation-of-ui-state">Step 3:  Identify The Minimal (but complete) Representation Of UI State</a>
 * Read <a target="_ref" href="https://reactjs.org/docs/thinking-in-react.html#step-4-identify-where-your-state-should-live">Step 4: Identify Where Your State Should Live</a>
 <br>and modify the code as described to add state
 * Complete <a target="_ref" href="https://reactjs.org/docs/thinking-in-react.html#step-5-add-inverse-data-flow">Step 5: Add Inverse Data Flow</a>
+
+
+---
+#### Optional Challenge: Add Cart
+#### Here's the <a target="_ref" href="https://davidmarsland.github.io/react-labs/solutions/catalog3cart/build/">Lab Solution Online</a>  
+
 * Optional Challenge: Create a Cart component and add selected products to the cart
 
 ```
@@ -162,6 +172,9 @@ handleAddToCart(product) {
 * Optional Challenge: use your own test data for real shopping! 
 
 ---
+### Alternative Approach: Refactor to use Functional Classes
+
+#### Here's the <a target="_ref" href="https://davidmarsland.github.io/react-labs/solutions/catalog4cartfunctional/build/">Lab Solution Refactored to Functional Online</a>  
 
 ### Redux Todo Example App from Redux Course 
 * <a target="_redux" href="https://github.com/sadams/todo-redux-react-webpack">https://github.com/sadams/todo-redux-react-webpack</a>
